@@ -1,0 +1,637 @@
+@font-face{
+    font-family: "Vazir";
+    src:url("../font/Vazir-Thin.eot");
+    src:url("../font/Vazir-Thin.eot?#iefix") ;
+    src:url("../font/Vazir-Thin.woff2") format("woff2") ;
+    src:url("../font/Vazir-Thin.woff") format("woff") ;
+    src:url("../font/Vazir-Thin.ttf") format("truetype") ;
+}
+@font-face{
+    font-family: "IranNastaliq";
+    src:url("../font/IranNastaliq.eot");
+    src:url("../font/IranNastaliq.eot?#iefix") ;
+    src:url("../font/IranNastaliq.woff2") format("woff2") ;
+    src:url("../font/IranNastaliq.woff") format("woff") ;
+    src:url("../font/IranNastaliq.ttf") format("truetype") ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Vazir" !important;
+}
+button{
+    border: none;
+    outline: none;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    background-color: #007D5F;
+    padding-top:10px ;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    border: none !important;
+}
+.logo{
+    margin: 15px 0 0 30px;
+    text-transform: uppercase;
+    font-family:"IranNastaliq" !important;
+    color: whitesmoke !important;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+
+}
+.nav-list li {
+    margin-right: 30px;
+}
+
+.nav-list li a{
+text-decoration: none;
+color: whitesmoke;
+transform: all .5s ease;
+
+}
+.nav-list li a:hover{
+    color: #8eaeb4;
+    border-bottom: 2px solid white;
+    
+}
+.dropdown-menu{
+    background-color: #007D5F !important;
+}
+.dropdown-menu li{
+    margin-right: 0 !important;
+}
+.dropdown-menu li a{
+    position: relative;
+    right: 0;
+}
+#hambergur-toggle {
+    display: none;
+}
+
+.hambergur {
+    width: 30px;
+    height: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+
+}
+.hambergur .bar {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.3s;
+}
+.hambergur .bar::before,
+.hambergur .bar::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.hambergur .bar::before {
+    transform: translateY(-10px);
+}
+.hambergur .bar::after {
+    transform: translateY(10px);
+}
+
+
+img{
+    width: 100%;
+}
+
+.section-img{
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/sardar-group.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+#gognos{
+    font-family:"IranNastaliq" !important;
+   font-size: 70px;
+    color: #eeeeee;
+    margin-top: 5rem;
+}
+.meno{
+    color: black!important;
+}
+.meno:hover{
+    border-bottom: 2px solid #007D5F;
+
+}
+.name{
+    background: #007D5F !important;
+    padding: 10px 25px !important;
+}
+.gognosh5{
+    line-height: 30px;
+}
+
+#icon1{
+    color: #942a00;
+    background-color: rgba(255, 143, 0, .1);
+    padding: 25px;
+    border-radius: 116px;
+    box-shadow: 0 0 12px 0 rgb(71 119 244 / 20%);
+
+}
+#icon1:hover{
+    color: white;
+    background-color: #b8606c;
+    transition: ease 0.5s;
+}
+#icon2{
+    color: #0d4696;
+    background-color: white;
+    padding: 25px;
+    border-radius: 116px;
+    box-shadow: 0 0 12px 0 rgb(71 119 244 / 20%);
+}
+#icon2:hover{
+    color: white;
+    background-color: #0d4696;
+    transition: ease 0.5s;
+}
+#icon3{
+    color: #b8606c;
+    background: rgba(41, 207, 141, .1);
+    padding: 25px;
+    border-radius: 116px;
+    box-shadow: 0 0 12px 0 rgb(71 119 244 / 20%);
+}
+#icon3:hover{
+    color: white;
+    background-color: #843534;
+    transition: ease 0.5s;
+}
+.job{
+    margin-top: 5rem;
+    font-weight: bold;
+    color: #3587fa;
+}
+.membar-header{
+    color:white !important ;
+    text-align: center;
+    font-weight: bold;
+    background: #007D5F !important;
+
+}
+.member-img {
+border-style: none;
+
+}
+.weke{
+    color: white;
+    text-decoration: none;
+}
+.weke:hover{
+    color: #444444;
+}
+
+.slider{
+    background-color:#E0E0E0;
+
+}
+.slider1{
+    color: #C7C7C7;
+    font-weight: bold;
+    text-decoration: none;
+}
+.endh2{
+
+    text-align: center;
+    font-weight: bold;
+    color: #5587fa;
+}
+.footer{
+    background-color: #007D5F;
+}
+.list li{
+    padding: 0.5rem;
+    list-style: none;
+    border-bottom: 1px dotted white;
+    width: 80%;
+
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+}
+.list li a:hover{
+    color: #444444;
+}
+.number{
+    margin-top: 10px;
+background-color:#2e39bf ;
+ color: whitesmoke;
+    padding-bottom:50px;
+}
+#value{
+    font-size: 5rem;
+    font-weight:bold;
+    text-align: center;
+    padding: 20px;
+}
+#majls{
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+#consert{
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+
+.link{
+    margin-right: 2rem;
+    color: whitesmoke;
+}
+.membar{
+    margin-right: 2rem;
+    padding: 0.5rem;
+    width: 80%;
+}
+.membar:hover{
+    background: #008D3f ;
+    color: white;
+}
+.linkshbakaeh{
+    margin: 5px 2rem 0 0;
+    font-size: 30px;
+    color: #00c6ff;
+}
+
+#instagram:hover{
+    color:#fcb045;
+}
+#twitter:hover{
+    color: #2a0845;
+}
+#facebook:hover{
+    color: #344e86;
+}
+#telegram:hover{
+    color: #0082c8;
+}
+
+/**biography**/
+.biography{
+    margin-top: 100px !important;
+    
+}
+.biography p{
+    text-align: justify;
+    
+}
+/**guitar**/
+.guitar{
+    margin-top: 80px !important;
+}
+article{
+    padding: 20px;
+    border-radius: 7px;
+}
+ aside{
+    border-radius: 7px;
+    height: 310px;
+}
+aside ul{
+    list-style: none;
+}
+.list-group-item a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.list-group-item:hover{
+ background-color:#007D5F;
+    color: white !important;
+}
+.list-group-item a:hover{
+    color: white;
+}
+.breadcrumb a{
+    text-decoration: none;
+}
+.video{
+    border: 1px dashed #d7e0e9;
+    border-radius: 5px;
+    position: relative;
+    width: 730px !important;
+    margin-right:15px
+}
+.video h5{
+    float: right;
+}
+.download{
+    float: left;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.download i{
+    color: #6fc341;
+    border-radius: 50%;
+    border: 1px solid #b6e49c;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+
+}
+
+.video1{
+    border: 2px solid #d7e0e9;
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    position: absolute;
+    right: -15px;
+    top: 16px;
+    text-align: center;
+    color: #556167;
+    background-color: white;
+    border-radius: 50%;
+}
+.btn-name:hover{
+    background: #007D5F;
+    color:white
+}
+
+/**login*/
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.login{
+    border-radius: 10px;
+    width: 768px;
+    height: 480px;
+    position: absolute;
+    box-shadow: -5px -5px 10px #fff, 5px 5px 10px #babebc;
+    overflow: hidden;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    background: #ebecf0;
+    padding: 0 50px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.form input{
+    background: #eee;
+    padding: 14px;
+    margin: 8px 0;
+    width: 85%;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: inset 7px 2px 10px #babebc, inset -5px -5px 12px #fff;
+    outline: none;
+}
+.button{
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 45px;
+    margin: 14px;
+    transition: transform 80ms ease-in;
+    box-shadow: -5px -5px 10px #fff, 5px 5px 8px #babebc;
+}
+.form_btn{
+    box-shadow: -5px -5px 10px #fff, 5px 5px 8px #babebc;
+}
+.form_btn:active{
+    box-shadow: inset 1px 1px 2px #babebc, inset -1px -1px 2px #fff;
+}
+.overlay-btn{
+    background: #007D5F;
+    color: #fff;
+    box-shadow: -5px -5px 10px #008D3f, 5px 5px 8px #009D5F;
+}
+.sign-in-container{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.sign-up-container{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.overlay-left{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    background: #007D5F;
+    color: #fff;
+    transition: all 0.5s;
+}
+.overlay-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    background: #007D5F;
+    color: #fff;
+    transition: all 0.5s;
+}
+.login.right-panel-active .sign-in-container{
+    transform: translateX(100%);
+    opacity: 0;
+}
+.login.right-panel-active .sign-up-container{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 2;
+}
+.login.right-panel-active .overlay-right{
+    transform:translateX(-100%);
+    opacity: 0;
+}
+.login.right-panel-active .overlay-left{
+    transform:translateX(-100%) ;
+    opacity: 1;
+    z-index: 2;
+}
+.links div{
+    display: inline-flex;
+    margin: 10px 5px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px -5px 10px #fff, 5px 5px 8px #babebc;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+}
+.links a{
+    color: #007D5F;
+}
+.links div:active {
+    box-shadow: inset 1px 1px 2px #babebc, inset -1px -1px 2px #fff;
+}
+
+/**contant**/
+.content{
+    margin-top: 100px;
+    background-image:linear-gradient(to bottom, rgba(92,77,66,0.9) ,rgba(92,77,66, 0.9)), url(/img/14000125001116_Test_PhotoN.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+    border-radius: 15px;
+    display: grid;
+    place-items:center;
+}
+.content h1{
+    font-size: 60px;
+    font-weight:bold;
+    color:#2e39bf;
+    text-align: center;
+
+}
+
+.cont-form input,textarea,.btn-us{
+    border:solid 2px rgba(0, 0, 0, 0.3);
+    outline: none;
+    padding: 10px ;
+    border-radius: 10px;
+    width:100%;
+    margin-top: 1rem;   
+}
+.address h2{
+    font-family: "IranNastaliq";
+    text-align: center;
+    margin-top: 10rem; 
+    color: #007D5F;
+    font-weight: bold;  
+}
+.address a{
+    text-decoration: none;
+    color:black ;
+}
+/**mobail**/
+@media (max-width: 768px) {
+    .byuo {
+        flex: 33.33%;
+        max-width: 33.333%;
+    }
+    .logo{
+        margin-right: 15px;
+    }
+    .nav-list{
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s;
+        background-color: #007D5F;
+        transform: translateX(100%) ;
+    }
+    .nav-list li a {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px 2px;
+        transition: all 0.3s;
+        color: whitesmoke;
+    }
+    .nav-list li a:hover {
+        background-color:#007D5F ;
+        color: whitesmoke;
+        transform: translateY(-10px);
+    }
+    .hambergur {
+        display: flex;
+        z-index: 999;
+    }
+    #hambergur-toggle:checked ~ .nav-list {
+        transform: none;
+    }
+    #hambergur-toggle:checked ~ .hambergur .bar {
+        background-color: transparent;
+    }
+    #hambergur-toggle:checked ~ .hambergur .bar::before {
+        transform: rotate(45deg);
+    }
+    #hambergur-toggle:checked ~ .hambergur .bar::after {
+        transform: rotate(-45deg);
+    }
+    .sign-in-container{
+        width: 50%;
+        height: 100%;
+
+
+    }
+    .overlay-left{
+        width: 50%;
+        height: 100%;
+
+    }
+    .overlay-right{
+        width: 50%;
+        height: 100%;
+
+    }
+    .sign-up-container{
+        width:50%;
+        height: 100%;
+    }
+
+}
